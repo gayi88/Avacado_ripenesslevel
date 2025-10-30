@@ -27,3 +27,4 @@ This project predicts the ripeness level of avocados using deep learning. The mo
 - Validation accuracy and test accuracy were noted.
 
 Finally, a **Streamlit app** was deployed for easy use and visualization.
+**Try the live app:** [Avocado Ripeness Level App](https://avacadoripenesslevel-sczeqpcsbruacdcy6exsju.streamlit.app/)
