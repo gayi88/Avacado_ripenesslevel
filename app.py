@@ -4,9 +4,9 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import os
 
-# -----------------------
+
 # Load Model
-# -----------------------
+
 MODEL_PATH = r"D:\EC_utbildning\avacado_ripeness_level\avocado_model.h5"
 
 st.title("🥑 Avocado Ripeness Classifier")
