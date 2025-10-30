@@ -7,7 +7,7 @@ import os
 
 # Load Model
 
-MODEL_PATH = r"D:\EC_utbildning\avacado_ripeness_level\avocado_model.h5"
+MODEL_PATH = "avocado_model.h5"
 
 st.title("🥑 Avocado Ripeness Classifier")
 st.write("Upload an image of an avocado to check its ripeness level.")
