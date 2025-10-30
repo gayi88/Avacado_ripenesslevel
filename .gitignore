@@ -1,0 +1,11 @@
+# Ignore Python virtual environment
+.venv/
+env/
+__pycache__/
+
+# Ignore environment variables or sensitive files
+.env
+
+# Ignore local dataset folders
+dataset/
+utility_data/

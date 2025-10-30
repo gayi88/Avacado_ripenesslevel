@@ -1,0 +1,39 @@
+The data has 14000 images of avacado with 5 stages:
+stage 1: Unriped : more than 1 week to use
+stage 2: Early ripening : 2 to 3 days 
+stage 3: Perfect : can be used for sallad
+stage 4: Overriped : Can be used to make guacamole
+satge 5: Spoiled : Not edible
+
+Organise the whole data into 5 seperate folders. (organise_avacado_images.py)
+Each stage has a seperate folder. 
+Used Azure blob storage and uploaded 5 folders.
+
+Then to process the data, retrive the data and convert them into numpy arrays which will help not to retrive every time when we close and open project and also memory saving.
+(retrive_data.py)
+X.npy and y.npy are numpy arrays  with all the data of 14000 images.
+
+As a first step to do model: following steos are done:
+1. try to understand data: size,shape and vizualize 1 image per class to see if the image is colour or grayscale.
+2. Are pixels same for all images
+3. How many images are there in respective folders.If all folders dont have equal amount of data, its always usefull to add class weights for proper understanding of data to the model.
+4. Split the data train,test and validation
+5. Imagedata generator is used to make our model robust: it automatically creates new,sligthly modified version of images every time they used in training.
+6. generator function creates batches of data for training instead of loading all images into RAM once.
+
+Finally used CNN to load the data and create model to identify the ripeness level of avacodo.
+
+Once model gives train and test accuracy: create confusion matrix which will explain where our model is not working properly.
+Finally classification report gives us a clear idea about the model.
+
+To check the ripeness level used streamlit to create an app so that we can check our results.
+
+Things I faced during this project:
+1. The data is small but the main issue is with pixel size of 255 cant be used as per memory issues,if used the accuracy 
+would have gone little bit high.
+2. The data collected is giving good results with 1st and last class. middle classes model is not completly perfect as the 
+images are silimar and model has to identify only by colour and image, if given model the texture then it would predict perfectly 
+as we see in Super markets right now.
+
+
+
